@@ -52,11 +52,15 @@ height: fit-content;
     transition: 0.5s;
 }
 
+/*
+
 #text:hover{
 background-color: #DEB992;
 font-weight: 800;
 color: #141824;
 }
+
+*/
 
 #photo{
     padding: 2px;
@@ -79,5 +83,13 @@ align-items: center;
 
 #photo:hover{
 background: #5c5b5b28 ;
+}
+
+
+
+.active{
+    background-color: #DEB992;
+    font-weight: 800;
+    color: #141824;
 
 }
