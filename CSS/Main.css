@@ -93,3 +93,16 @@ background: #5c5b5b28 ;
     color: #141824;
 
 }
+
+
+#content{
+align-items: center;
+justify-content: center;
+position: relative;
+display: flex;
+height: 40vw;
+width: 30vw;
+background-color: #B2A4FF;
+border: #B2A4FF 1px solid;
+top: 1vw;
+}

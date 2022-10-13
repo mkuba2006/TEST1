@@ -4,10 +4,19 @@ const nav_el = nav.querySelectorAll('a');
 */
 
 
-$element = $('a#text')
-$element.on('click', function(){
-  $(this).addClass('active');
-})
 
 
+$('nav a').on('click', function(e){
 
+  e.preventDefault();
+  
+  var url = this.href;
+  
+  $('nav a.active').removeClass('active');
+  $(this).addClass('active')
+  
+  $('#container').remove();
+  $('#content').load(url + '#content').hide().fadeIn('200');
+  
+  
+  })
