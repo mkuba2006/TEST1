@@ -122,8 +122,5 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
 @media screen and (max-width:800px) {
     #header_logo{
         font-size: 1.5em;
-        font-family: 'Pacifico', cursive;
-        animation: do_a_logo 5s linear infinite;
-        min-height: max-content;
     }
 }
