@@ -39,3 +39,12 @@ $('nav a').on('click', function(e){
   $('#content').load(url + '#content').hide().fadeIn('500');
   })
 
+/*
+  const burger = document.getElementById('#burger');
+  burger.on('click', () =>{
+
+    burger.
+
+
+  })
+  */
