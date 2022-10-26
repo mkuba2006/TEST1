@@ -1,12 +1,11 @@
 *{
     margin: 0;
-    color: aliceblue;
     
 }
 
 *, *::before, *::after{
     box-sizing: border-box;
-    color: aliceblue;
+    color: #86C232;
     }
 
 body{
@@ -20,15 +19,16 @@ body{
 
 html{
     font-family: 'Poppins', sans-serif;
-    color: aliceblue;
     height:100%;
-    background: #141824 ;
+    background: #1A1A1D ;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
 header{
+    padding-left: 2%;
+    padding-right: 2%;
     width: 100%;
     border-bottom: #DEB992 1px solid ;
     align-items: center;
@@ -138,7 +138,15 @@ box-shadow: rgba(228, 92, 92, 0.25) 0px 54px 55px, rgba(202, 69, 255, 0.219) 0px
 }
 
 
+h2{
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}
 
+span{
+    color: #7400d2;
+}
 
 
 @media screen and (max-width:2505px) {
@@ -241,6 +249,7 @@ box-shadow: rgba(228, 92, 92, 0.25) 0px 54px 55px, rgba(202, 69, 255, 0.219) 0px
         display: block;
     }
     
+    
     nav{
         position: absolute;
         right: 0px;
@@ -301,13 +310,27 @@ box-shadow: rgba(228, 92, 92, 0.25) 0px 54px 55px, rgba(202, 69, 255, 0.219) 0px
     }
 
     #main-contcts_a img{
-        padding-top: 10px;
-        max-width: 13px;
+        padding-top: 20px;
+        min-width: 20px;
     }
 
 
     #burger div{
         display: block;
+    }
+    
+}
+
+@media screen and (max-width:350px) {
+
+    #main-contcts_a img{
+        padding-top: 14px;
+        max-width: 40px;
+        margin: 0;
+    }
+
+    #main-contcts{
+        margin: 0;
     }
     
 }

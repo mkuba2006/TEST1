@@ -31,12 +31,10 @@ $('nav a').on('click', function(e){
   
   var url = this.href;
   
-  $('nav a.active').removeClass('active');
-  $(this).addClass('active')
-  
-  $('#container').remove();
-  $('#content').fadeOut('50000').show();
-  $('#content').load(url + '#content').hide().fadeIn('500');
+  $('nav a.active').toggleClass( "active" )
+  $(this).toggleClass( "active" )
+  $('#content').fadeOut(1000);
+  $('#content').load(url + '#content').hide().fadeIn(500);
   })
 
 /*
@@ -48,3 +46,12 @@ $('nav a').on('click', function(e){
 
   })
   */
+
+  var dzis = new Date();
+  var rok = dzis.getFullYear();
+  var est = new Date('Sep 10, 2021 15:00:00');
+  var roznica = dzis.getTime() - est.getTime();
+  roznica = (roznica / 31556900000);
+
+  var msg = document.getElementById('clock');
+  msg.textContent = textContent = Math.floor(roznica) + ' year/s';
