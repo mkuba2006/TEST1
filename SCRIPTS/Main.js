@@ -55,3 +55,27 @@ $('nav a').on('click', function(e){
 
   var msg = document.getElementById('clock');
   msg.textContent = textContent = Math.floor(roznica) + ' year/s';
+
+/*
+  $('#burger').on('click', function(e){
+    $('#line1').toggleClass("toggle")
+    $('#line2').toggleClass("toggle")
+    $('#line3').toggleClass("toggle")
+  })
+  */
+  const nav = document.querySelector('nav');
+  const nav_links = document.querySelectorAll('nav a');
+  const burger = document.querySelector('#burger');
+
+  burger.addEventListener('click', () => {
+  burger.classList.toggle('toggle');
+  nav.classList.toggle('nav_active');
+
+  nav_links.forEach((link , index) => {
+    link.style.animation = `navLink 0.5s ease forwards ${index / 7}s`;
+
+  })
+
+
+
+  })
