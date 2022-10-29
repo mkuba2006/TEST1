@@ -75,7 +75,5 @@ $('nav a').on('click', function(e){
     link.style.animation = `navLink 0.5s ease forwards ${index / 7}s`;
 
   })
-
-
-
   })
+  
