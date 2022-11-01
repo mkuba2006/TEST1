@@ -40,6 +40,7 @@ header{
     justify-content: space-between;
     position: sticky;
     z-index: 100;
+    height: 10vh;
 }
 
 #header_logo{
@@ -79,14 +80,17 @@ header{
 nav{
 justify-content: space-between;
 height: fit-content;
-padding: 1rem;
+
 }
 
 nav a{
     display: inline;
     list-style-type: none;
     text-decoration: none;
-    padding: 1.1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-bottom: 2.1rem;
+    padding-top: 2.1rem;
     overflow: hidden;
     transition: 0.5s;
     width: 100%;
@@ -124,10 +128,7 @@ align-items: center;
 
 }
 
-#main-contcts_a img{
-    padding: 5px;
-    min-width: 40px;
-}
+
 
 
 #photo:hover{
@@ -198,13 +199,21 @@ opacity: 0;
         transform: translateX(0px);
     }
 }
+#fa{
+font-size: 32px; 
+color: azure
+}
 
 
-
-
-
-
-
+.fa-bounce{
+    --fa-bounce-start-scale-x: 1;
+    --fa-bounce-start-scale-y: 1;
+    --fa-bounce-jump-scale-x: 1;
+    --fa-bounce-jump-scale-y: 1;
+    --fa-bounce-land-scale-x: 1;
+    --fa-bounce-land-scale-y: 1;
+    --fa-bounce-rebound: 0;
+}
 
 
 
@@ -212,7 +221,7 @@ opacity: 0;
 
 @media screen and (max-width:2505px) {
     #content{
-    top: 4vh;
+    top: 2vh;
     height: 75vh;
     width: 50vw;
     }
@@ -226,9 +235,29 @@ opacity: 0;
     }
 
     #cp-right{
-        font-size: 22px;
+        font-size: 32px;
+    }
+
+    #fa{
+        font-size: 43px;
+        padding: 10px;
+    }
+
+    footer{
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-top: 1%;
+        height: 8vh;
     }
 }
+@media screen and (max-width:1800px) {
+nav a{
+    padding-bottom: 1.8rem;
+}
+    
+}
+
+
 
 @media screen and (max-width:1545px) {
     h1{
@@ -257,11 +286,25 @@ opacity: 0;
     #header_logo{
         width: 50vw;
     }
+    header{
+        height: 8vh;
+    }
+
+    nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+        padding-bottom: 1.3rem;
+        padding-top: 2.1rem;
+    }
 }
 @media screen and (max-width:1100px) {
 
     #header_logo{
         width: 40vw;
+    }
+
+    #text{
+        font-size: 18px;
     }
 }
 
@@ -270,6 +313,15 @@ opacity: 0;
     #header_logo{
         width: 36vw;
     }
+
+    #content{
+        top: 10vh;
+        height: 63vh;
+        width: 60vw;
+        }
+
+
+
 
 }
 
@@ -280,6 +332,11 @@ opacity: 0;
 
 @media screen and (max-width: 800px) {
 
+    #content{
+        top: 10vh;
+        height: 63vh;
+        width: 60vw;
+        }
 
     h1{
         font-size: 25px;
@@ -290,20 +347,13 @@ opacity: 0;
     }
 
 
-
-    footer{
-        padding-left: 1%;
-        padding-right: 1%;
-        padding-top: 1%;
-    }
-
     #cp-right{
-        font-size: 18px;
+        font-size: 28px;
     }
 
-    #main-contcts_a img{
-        padding-bottom: 10px;
-        min-width: 30px;
+    #fa{
+        font-size: 38px;
+        padding: 10px;
     }
 
     #burger div{
@@ -315,7 +365,7 @@ opacity: 0;
         position: absolute;
         right: 0px;
         height: 94vh;
-        top: 6vh;
+        top: 8vh;
         background-color: #151b29f6;
         display: flex;
         flex-direction: column;
@@ -337,6 +387,27 @@ opacity: 0;
     }
 
 
+}
+@media screen and (max-width: 700px) {
+    #cp-right{
+        font-size: 23px;
+    }
+
+    #fa{
+        font-size: 33px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #cp-right{
+        font-size: 20px;
+    }
+
+    #fa{
+        font-size: 30px;
+        padding: 7px;
+    }
 }
 
 
@@ -367,12 +438,11 @@ opacity: 0;
     }
 
     #cp-right{
-        font-size: 13px;
+        font-size: 18px;
     }
 
-    #main-contcts_a img{
-        padding-top: 20px;
-        min-width: 20px;
+    #fa{
+        font-size: 25px;
     }
 
 
@@ -382,12 +452,13 @@ opacity: 0;
     
 }
 
-@media screen and (max-width:350px) {
+@media screen and (max-width:430px) {
+    #cp-right{
+        font-size: 14px;
+    }
 
-    #main-contcts_a img{
-        padding-top: 14px;
-        max-width: 40px;
-        margin: 0;
+    #fa{
+        font-size: 25px;
     }
 
     #main-contcts{

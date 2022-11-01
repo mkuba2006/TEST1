@@ -33,19 +33,10 @@ $('nav a').on('click', function(e){
   
   $('nav a.active').toggleClass( "active" )
   $(this).toggleClass( "active" )
-  $('#content').fadeOut(1000);
-  $('#content').load(url + '#content').hide().fadeIn(500);
-  })
-
-/*
-  const burger = document.getElementById('#burger');
-  burger.on('click', () =>{
-
-    burger.
-
 
   })
-  */
+
+
 
   var dzis = new Date();
   var rok = dzis.getFullYear();
@@ -56,13 +47,7 @@ $('nav a').on('click', function(e){
   var msg = document.getElementById('clock');
   msg.textContent = textContent = Math.floor(roznica) + ' year/s';
 
-/*
-  $('#burger').on('click', function(e){
-    $('#line1').toggleClass("toggle")
-    $('#line2').toggleClass("toggle")
-    $('#line3').toggleClass("toggle")
-  })
-  */
+
   const nav = document.querySelector('nav');
   const nav_links = document.querySelectorAll('nav a');
   const burger = document.querySelector('#burger');
