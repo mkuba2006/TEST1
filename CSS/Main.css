@@ -87,8 +87,8 @@ nav a{
     display: inline;
     list-style-type: none;
     text-decoration: none;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+    padding-right: 1.8rem;
+    padding-left: 1.8rem;
     padding-bottom: 2.1rem;
     padding-top: 2.1rem;
     overflow: hidden;
@@ -235,11 +235,11 @@ color: azure
     }
 
     #cp-right{
-        font-size: 32px;
+        font-size: 25px;
     }
 
     #fa{
-        font-size: 43px;
+        font-size: 37px;
         padding: 10px;
     }
 
@@ -304,7 +304,7 @@ nav a{
     }
 
     #text{
-        font-size: 18px;
+        font-size: 19px;
     }
 }
 
@@ -348,11 +348,11 @@ nav a{
 
 
     #cp-right{
-        font-size: 28px;
+        font-size: 23px;
     }
 
     #fa{
-        font-size: 38px;
+        font-size: 3;
         padding: 10px;
     }
 
