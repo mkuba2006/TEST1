@@ -17,7 +17,6 @@ body{
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
 }
 
 
@@ -27,7 +26,7 @@ html{
     background: #1A1A1D ;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     
 }
 
@@ -75,43 +74,6 @@ header{
         background-position: 200% center;
       }
     }
-
-
-    
-    button {
-        background: #540075;
-        color: white;
-        border: 1px solid #540075;
-        border-radius: 5px;
-        padding: 0.5rem 2rem;
-        font: inherit;
-        cursor: pointer;
-      }
-      
-      button:focus {
-        outline: none;
-      }
-      
-      button:hover,
-      button:active {
-        background: #790fa3;
-        border-color: #790fa3;
-      }
-      
-      .cart {
-        margin: 5rem 2rem;
-        border: 2px solid #540075;
-        border-radius: 10px;
-        padding: 2rem;
-        display: flex;
-        justify-content: space-between;
-      }
-      
-      .cart h2 {
-        margin: 0;
-        font-size: 1.5rem;
-        color: #540075;
-      }
       
       .product-list {
         list-style: none;
@@ -122,8 +84,10 @@ header{
       .product-item {
         margin: 2rem auto;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-        width: 50rem;
+        width: 40rem;
         max-width: 90%;
+        padding: 0.1rem;
+        border: #DEB992 1px solid ;
       }
       
       .product-item img {
@@ -136,10 +100,18 @@ header{
         padding: 1rem;
         text-align: center;
       }
-      
+      h2 a{
+        list-style-type: none;
+        text-decoration: none;
+        animation: do_a_logo 5s linear infinite;
+      }
       .product-item h2,
       .product-item h3 {
         margin: 0 0 1rem 0;
+      }
+
+      #app{
+        width: 90vw;
       }
       
 @keyframes do_a_logo{ 0%{color:#FFF9CA ;}  25%{color:#B2A4FF ;} 50%{color:#FFB4B4 ;} 75%{color:#D2001A ;} 100%{color:#FFF9CA ;} }
