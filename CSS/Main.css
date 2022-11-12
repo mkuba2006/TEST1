@@ -198,9 +198,41 @@ opacity: 0;
         transform: translateX(0px);
     }
 }
+
+
 #fa{
 font-size: 32px; 
-color: #838282b4;
+}
+
+.fa-active{
+    background-color: #37373d3a;
+    border-radius: 5px ;
+}
+
+@keyframes Do_Fa1 {
+    0%{color:#FFF9CA ;}  
+    50%{color:#D2001A ;}
+    100%{color:#FFF9CA ;} 
+}
+@keyframes Do_Fa2 {
+    0%{color:#FFF9CA ;}  
+    50%{color:#45b611 ;}
+    100%{color:#FFF9CA ;} 
+}
+@keyframes Do_Fa3 {
+    0%{color:#FFF9CA ;}  
+    50%{color:#004ad2 ;}
+    100%{color:#FFF9CA ;} 
+}
+
+#all:first-child {
+    animation: Do_Fa1 3s linear infinite;
+    }
+#all:nth-child(2) {
+    animation: Do_Fa2 5.5s linear infinite;
+}
+#all:last-child {
+    animation: Do_Fa3 8s linear infinite;
 }
 
 

@@ -9,8 +9,15 @@ $('nav a').on('click', function(e){
   $(this).toggleClass( "active" )
   setTimeout(`location.href = '${url}';`,500);
   })
+$('#fa:last-child').hover(function () {
+  $(this).toggleClass( "fa-active" );
+  }
+);
 
-
+$('#fa:last-child').hover(function () {
+  $(this).toggleClass( "fa-active" );
+  }
+);
 
   var dzis = new Date();
   var rok = dzis.getFullYear();
