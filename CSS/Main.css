@@ -1,5 +1,4 @@
 
-
 *{
     margin: 0;
     
@@ -7,8 +6,6 @@
 
 *, *::before, *::after{
     box-sizing: border-box;
-    color: #E9C893;
-    
     }
 
 body{
@@ -40,7 +37,8 @@ header{
     justify-content: space-between;
     position: sticky;
     z-index: 100;
-    height: 10vh;
+    height: 8vh;
+    
 }
 
 #header_logo{
@@ -57,7 +55,7 @@ header{
     #571529 0%,
     #44107a 29%,
     #ff1361 67%,
-    #ffee00 100%
+    #a6ff00 100%
       );
       background-size: auto auto;
       background-clip: border-box;
@@ -65,7 +63,7 @@ header{
       color: #fff;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: textclip 6s linear infinite;
+      animation: textclip 10s linear infinite;
       display: inline-block;
     }
     
@@ -89,12 +87,12 @@ nav a{
     text-decoration: none;
     padding-right: 1.8rem;
     padding-left: 1.8rem;
-    padding-bottom: 2.1rem;
+    padding-bottom: 1.5rem;
     padding-top: 2.1rem;
     overflow: hidden;
     transition: 0.5s;
     width: 100%;
-
+    color: #E9C893;
 }
 
 #burger div{
@@ -157,6 +155,7 @@ background-color: #1D2731;
 border: #DEB992 1px solid;
 border-radius: 3px;
 box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+color: #E9C893;
 }
 
 .animation{
@@ -201,7 +200,7 @@ opacity: 0;
 }
 #fa{
 font-size: 32px; 
-color: azure
+color: #838282b4;
 }
 
 
@@ -236,6 +235,7 @@ color: azure
 
     #cp-right{
         font-size: 25px;
+        color: #E9C893;
     }
 
     #fa{
@@ -252,7 +252,7 @@ color: azure
 }
 @media screen and (max-width:1800px) {
 nav a{
-    padding-bottom: 1.8rem;
+    padding-bottom: 1.3rem;
 }
     
 }
