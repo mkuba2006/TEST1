@@ -19,14 +19,18 @@ $('#fa:last-child').hover(function () {
   }
 );
 
-  var dzis = new Date();
+  const dzis = new Date();
   var rok = dzis.getFullYear();
   var est = new Date('Sep 10, 2021 15:00:00');
   var roznica = dzis.getTime() - est.getTime();
   roznica = (roznica / 31556900000);
-
+  
   var msg = document.getElementById('clock');
   msg.textContent = textContent = Math.floor(roznica) + ' year/s';
+
+
+
+
 
 
   const nav = document.querySelector('nav');
