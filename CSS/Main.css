@@ -209,17 +209,17 @@ font-size: 32px;
 
 @keyframes Do_Fa1 {
     0%{color:#FFF9CA ;}  
-    50%{color:#D2001A ;}
+    50%{color:	#7289DA ;}
     100%{color:#FFF9CA ;} 
 }
 @keyframes Do_Fa2 {
     0%{color:#FFF9CA ;}  
-    50%{color:#45b611 ;}
+    50%{color:#d7e606 ;}
     100%{color:#FFF9CA ;} 
 }
 @keyframes Do_Fa3 {
     0%{color:#FFF9CA ;}  
-    50%{color:#004ad2 ;}
+    50%{color:#D2001A ;}
     100%{color:#FFF9CA ;} 
 }
 
@@ -374,16 +374,18 @@ nav a{
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 820px) {
 
     #content{
         top: 10vh;
         height: 63vh;
         width: 60vw;
+        font-size: 20px;
+        min-width: 80%;
         }
 
     h1{
-        font-size: 25px;
+        font-size: 35px;
     }
 
     #header_logo{
@@ -443,15 +445,34 @@ nav a{
     }
 }
 
+
+
 @media screen and (max-width: 600px) {
+    footer{
+        display: inline;
+        text-align: center;
+    }
+
     #cp-right{
         font-size: 20px;
     }
 
     #fa{
-        font-size: 30px;
         padding: 7px;
+        clear: both;
     }
+
+    #main-contats{
+        clear: both;
+    }
+
+    #content{
+        font-size: 15px;
+        min-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
 }
 
 
