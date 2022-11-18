@@ -76,7 +76,6 @@ header{
 nav{
 justify-content: space-between;
 height: fit-content;
-
 }
 
 nav a{
@@ -289,6 +288,9 @@ font-size: 32px;
         padding-top: 1%;
         height: 8vh;
     }
+    nav{
+        margin-left: 200px ;
+    }
 }
 @media screen and (max-width:1800px) {
 nav a{
@@ -299,7 +301,7 @@ nav a{
 
 
 
-@media screen and (max-width:1545px) {
+@media screen and (max-width:1579px) {
     h1{
         font-size: 30px;
     }
@@ -311,6 +313,9 @@ nav a{
     }
     #header_logo{
         margin-right: 7vw;
+    }
+    nav{
+        margin-left: 0 ;
     }
 }
 
@@ -448,8 +453,10 @@ nav a{
 
 @media screen and (max-width: 600px) {
     footer{
-        display: inline;
-        text-align: center;
+        flex-direction: column-reverse ;
+        height: 10vh;
+        align-items: center;
+        justify-content: center;
     }
 
     #cp-right{
