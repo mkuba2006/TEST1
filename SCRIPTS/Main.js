@@ -26,8 +26,11 @@ $('#fa:last-child').hover(function () {
   roznica = (roznica / 31556900000);
   
   var msg = document.getElementById('clock');
+  if(Math.floor(roznica)>1){
   msg.textContent = textContent = Math.floor(roznica) + ' year/s';
-
+  } else{
+    msg.textContent = textContent = Math.floor(roznica) + ' year';
+  }
 
 
 
