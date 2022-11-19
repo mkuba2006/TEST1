@@ -6,8 +6,6 @@
 
 *, *::before, *::after{
     box-sizing: border-box;
-    color: #E9C893;
-    
     }
 
 body{
@@ -15,17 +13,17 @@ body{
     justify-content: center;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 
 html{
     font-family: 'Poppins', sans-serif;
     height:100%;
-    background: #1A1A1D ;
+    background-color: #DFDBE5;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    
+    overflow: hidden;
 }
 
 header{
@@ -39,11 +37,6 @@ header{
     position: sticky;
     z-index: 100;
     height: 8vh;
-    position: fixed;
-    background-color: #180814ea;
-}
-.bodyl{
-    padding-top: 10vh;
 }
 
 #header_logo{
@@ -60,7 +53,7 @@ header{
     #571529 0%,
     #44107a 29%,
     #ff1361 67%,
-    #ffee00 100%
+    #a6ff00 100%
       );
       background-size: auto auto;
       background-clip: border-box;
@@ -68,7 +61,7 @@ header{
       color: #fff;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: textclip 6s linear infinite;
+      animation: textclip 10s linear infinite;
       display: inline-block;
     }
     
@@ -78,15 +71,12 @@ header{
       }
     }
 
-       
 @keyframes do_a_logo{ 0%{color:#FFF9CA ;}  25%{color:#B2A4FF ;} 50%{color:#FFB4B4 ;} 75%{color:#D2001A ;} 100%{color:#FFF9CA ;} }
 
 nav{
 justify-content: space-between;
 height: fit-content;
-
 }
-
 
 nav a{
     display: inline;
@@ -119,25 +109,6 @@ transition: all 0.3s ease;
 }
 
 
-footer{
-width: 100%;
-border-top: #DEB992 1px solid ;
-position: absolute;
-bottom: 1%;
-display: flex;
-padding-left: 3%;
-padding-right: 3%;
-padding-top: 1%;
-justify-content: space-between;
-align-items: center;
-
-}
-
-
-.bodyl{
-    padding-top: 10vh;
-}
-
 #photo:hover{
 background: #5c5b5b28 ;
 }
@@ -150,8 +121,6 @@ background: #5c5b5b28 ;
     color: #141824;
 
 }
-
-
 
 
 .toggle .line_one{
@@ -195,20 +164,47 @@ opacity: 0;
     }
 
 
-@media screen and (max-width:2505px) {
-    #text{
-        font-size: 20px;
+    @media screen and (max-width:2505px) {
+
+        #text{
+            font-size: 20px;
+        }
+    
+        h1{
+            font-size: 40px;
+        }
+
+        nav{
+            margin-left: 200px ;
+        }
     }
+@media screen and (max-width:1800px) {
+nav a{
+    padding-bottom: 1.3rem;
+}
+    
 }
 
-@media screen and (max-width:1800px) {
-        nav a{
-            padding-bottom: 1.3rem;
-        }
+
+
+@media screen and (max-width:1579px) {
+    h1{
+        font-size: 30px;
+    }
+    #header_logo{
+        margin-right: 7vw;
+    }
+    nav{
+        margin-left: 0 ;
+    }
 }
 
 
 @media screen and (max-width:1350px) {
+    h1{
+        font-size: 30px;
+    }
+
     #header_logo{
         width: 50vw;
     }
@@ -223,10 +219,11 @@ opacity: 0;
         padding-top: 2.1rem;
     }
 }
-@media screen and (max-width:1100px) {
+@media screen and (max-width:1150px) {
 
     #header_logo{
         width: 40vw;
+        margin-right: 5vw;
     }
 
     #text{
@@ -235,9 +232,12 @@ opacity: 0;
 }
 
 @media screen and (max-width:1000px) {
+
     #header_logo{
         width: 36vw;
     }
+
+
 }
 
 
@@ -245,8 +245,10 @@ opacity: 0;
 
 
 
-@media screen and (max-width: 800px) {
-
+@media screen and (max-width: 820px) {
+    h1{
+        font-size: 35px;
+    }
 
     #header_logo{
         font-size: 3em;
@@ -288,12 +290,34 @@ opacity: 0;
 
 
 
+@media screen and (max-width: 600px) {
+    #main-contats{
+        clear: both;
+    }
+
+    #content{
+        font-size: 15px;
+        min-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+}
+
+
 @media screen and (max-width:500px) {
+
+    #text{
+        font-size: 15px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
 
     #header_logo{
         font-size: 1.7em;
     }
-
 
 
     #burger div{
@@ -302,3 +326,9 @@ opacity: 0;
     
 }
 
+@media screen and (max-width:430px) {
+    #main-contcts{
+        margin: 0;
+    }
+    
+}
