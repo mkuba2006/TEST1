@@ -16,7 +16,9 @@ body{
     overflow: hidden;
 }
 
-
+.color_new{
+    background-color: #00000071;
+}
 html{
     font-family: 'Poppins', sans-serif;
     height:100%;
@@ -273,7 +275,7 @@ font-size: 32px;
     }
 
     #cp-right{
-        font-size: 25px;
+        font-size: 21px;
         color: #E9C893;
     }
 

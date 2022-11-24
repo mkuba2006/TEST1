@@ -37,6 +37,8 @@ header{
     position: sticky;
     z-index: 100;
     height: 8vh;
+    position: fixed;
+    
 }
 
 #header_logo{
@@ -76,6 +78,7 @@ header{
         margin: 0 2rem;
         padding: 0;
         position: relative;
+        margin-top: 5%;
       }
       
       .product-item {
