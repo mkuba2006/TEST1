@@ -83,11 +83,11 @@ header{
 
 
       .product-list {
-        list-style: none;
         margin: 0 2rem;
         padding: 0;
         position: relative;
         margin-top: 5%;
+        display: flexbox;
       }
       
 
@@ -102,37 +102,76 @@ header{
       .product-item {
         margin: 2rem auto;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-        width: 30rem;
-        min-height: 200px;
+        width: 28vw;
+        min-height: 190px;
         max-width: 80%;
         padding: 0.1rem;
-        border-radius: 20px;
+        border-radius: 15px;
         background-color: #251B37;
         display: flex;
-        padding: 0.5%;
+        padding: 2% 3% 2% 3%;
         align-items: center;
+
       }
+      .lasty{
+        justify-content: center;
+        align-items: center;
+        background-color: #571529;
+      }
+      
+      
+      .product-item_2 {
+        background-color: #f7f2ff;
+      }
+      
       
       .product-item img {
         width: 40%;
         max-height: 25vh;
         object-fit: cover;
-        border-radius: 20px;
-        height: 100%;
+        border-radius: 15px;
+    
       }
       
       .product-item__content {
-        padding: 1rem;
+        margin: 0 5% 0 5%;
         text-align: center;
         align-items: center;
         justify-content: center;
         color: #DEB992;
         width: 50%;
       }
+
+      button{
+        background: none;
+        border: none;
+        border-radius: 5px;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        animation: do_a_logo 5s linear infinite;
+        font-size: 24px;
+        font-weight: 700;
+      }
+      button:hover{
+        background-color: #181224;
+        border: none;
+        border-radius: 5px;
+      }
+      
       h2 a{
         list-style-type: none;
         text-decoration: none;
         animation: do_a_logo 5s linear infinite;
+      }
+      h3 a{
+        list-style-type: none;
+        text-decoration: none;
+        color: #E9C893;
       }
       .product-item h2,
       .product-item h3 {
@@ -140,7 +179,10 @@ header{
       }
 
       #app{
+        display: flex;
         width: 100vw;
+        align-items: center;
+        justify-content: center;
       }
 
 
@@ -159,7 +201,10 @@ header{
 
 
 
-
+@keyframes text{ 
+    
+    100%{background-color: #8f62e2;} 
+}
       
 @keyframes do_a_logo{ 0%{color:#FFF9CA ;}  25%{color:#B2A4FF ;} 50%{color:#FFB4B4 ;} 75%{color:#D2001A ;} 100%{color:#FFF9CA ;} }
 

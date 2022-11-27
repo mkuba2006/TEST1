@@ -66,13 +66,3 @@ text.forEach(text => {
 }); 
 
 
-const hi = document.querySelectorAll('h1');
-
-
-hi.forEach( event=> {
-
-  addEventListener('click', () =>{
-    event.classList.toggle('color_new');
-  })
-
-});

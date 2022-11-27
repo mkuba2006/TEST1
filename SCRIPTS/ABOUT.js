@@ -21,11 +21,12 @@ $('nav a').on('click', function(e){
 
 
 class Product {
-  constructor(nazwa, link, obraz, text){
+  constructor(nazwa, link, obraz, text, opis){
     this.nazwa = nazwa;
     this.link = link;
     this.obraz = obraz;
     this.text = text;
+    this.opis = opis;
   }
 }
 
@@ -42,8 +43,8 @@ class ProductItem {
     prodEl.innerHTML = `
           <img src="${this.product.obraz}" alt="${this.product.nazwa}" >
           <div class="product-item__content">
-            <h2><a href="${this.product.link}">${this.product.nazwa}</a></h2>
-            <h3>${this.product.text}</h3>
+            <h2><a href="${this.product.link}"><button>${this.product.nazwa}</button></a></h2>
+            <h3><a href="${this.product.opis}">${this.product.text}</a></h3>
           </div>
       `;
     return prodEl;
@@ -58,30 +59,35 @@ class ProductList {
       'https://www.youtube.com/watch?v=cq8k-ZbsXDI',
       'https://images.squarespace-cdn.com/content/v1/583863c1e6f2e1216884123c/1494090226795-ULW11342F9EEBL5GVWYD/image-asset.jpeg',
       'by The Doors',
+      'https://pl.wikipedia.org/wiki/The_Doors',
       ),
       new Product(
         'Karma Police',
         'https://www.youtube.com/watch?v=1uYWYWPc9HU',
         'https://i.scdn.co/image/ab67616d0000b273c8b444df094279e70d0ed856',
         'by Radiohead',
+        'https://pl.wikipedia.org/wiki/Radiohead',
       ),
       new Product(
         'Wet hands',
         'https://www.youtube.com/watch?v=MSepOYJxB64',
         'https://f4.bcbits.com/img/a3390257927_10.jpg',
         'by C418',
+        'https://www.wikidata.org/wiki/Q1847436',
       ),
       new Product(
-        'The Boys Are Back In Town',
-        'https://www.youtube.com/watch?v=56b4TTT609c',
+        'Jailbreak',
+        'https://www.google.com/search?q=yt+jailbreak+lizzy&oq=yt+jailbreak+lizzy&aqs=chrome..69i57j0i22i30.3538j0j4&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:9320bd58,vid:zAvhmmpwLbg',
         'https://i.scdn.co/image/ab67616d0000b273e8f69ab903901064b1f19249',
         'by Thin Lizzy',
+        'https://pl.wikipedia.org/wiki/Thin_Lizzy',
       ),
       new Product(
         'Under My Thumb',
         'https://www.youtube.com/watch?v=UHcR648Cg3I',
         'https://m.media-amazon.com/images/I/41+iACy1IhL._SY580_.jpg',
         'by The Rolling Stones',
+        'https://pl.wikipedia.org/wiki/The_Rolling_Stones',
       ),
   ];
 
@@ -131,3 +137,31 @@ class App {
 }
 
 App.init();
+
+
+
+const items = document.querySelectorAll('.product-item');
+
+let i = 0;
+while( i <= items.length ){
+
+  if(i%2 == 0 && window.screen.width > 1500){
+    console.log(i + ' tak');
+    items[i].style.float = 'left';
+    items[i].style.marginRight = '20px';
+  } else{
+    console.log(i + ' nie');
+    items[i+2].style.marginTop = '65px';
+  }
+
+  i++;
+}
+
+items[5].style.clear = 'both';
+items[5].classList.add('lasty');
+
+
+
+
+
+
