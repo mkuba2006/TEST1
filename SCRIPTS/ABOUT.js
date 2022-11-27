@@ -40,13 +40,11 @@ class ProductItem {
     const prodEl = document.createElement('li');
     prodEl.className = 'product-item';
     prodEl.innerHTML = `
-        <div>
           <img src="${this.product.obraz}" alt="${this.product.nazwa}" >
           <div class="product-item__content">
             <h2><a href="${this.product.link}">${this.product.nazwa}</a></h2>
             <h3>${this.product.text}</h3>
           </div>
-        </div>
       `;
     return prodEl;
   }
@@ -92,6 +90,13 @@ class ProductList {
   render() {
     const prodList = document.createElement('ul');
     prodList.className = 'product-list';
+    const opis = document.createElement('div');
+    opis.setAttribute('id', 'opis');
+    const opis_opis = document.createTextNode("My favourite songs");
+    opis.setAttribute('id', 'opisa');
+    opis.append(opis_opis);
+
+    prodList.prepend(opis);
     for (const prod of this.products) {
       const productItem = new ProductItem(prod);
       const prodEl = productItem.render();

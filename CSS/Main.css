@@ -153,12 +153,16 @@ height: 37vw;
 width: 30vw;
 top: 2vw;
 color: #E9C893;
+user-select: none;
 }
 
 .animation{
     display: flex;
 }
 
+h1{
+    cursor: pointer;
+}
 
 h2{
     justify-content: center;
