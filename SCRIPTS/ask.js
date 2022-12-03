@@ -36,3 +36,18 @@ $('nav a').on('click', function(e){
   })
   })
   
+  const text = document.querySelectorAll('#text');
+
+  text.forEach(text => {
+    text.addEventListener('mouseover', ()=>{
+      text.classList.add('color_new');
+    })
+  }); 
+  
+  text.forEach(text => {
+    text.addEventListener('mouseout', ()=>{
+      text.classList.remove('color_new');
+    })
+  }); 
+  
+  

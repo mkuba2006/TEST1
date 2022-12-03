@@ -89,6 +89,7 @@ class ProductList {
         'by The Rolling Stones',
         'https://pl.wikipedia.org/wiki/The_Rolling_Stones',
       ),
+      
   ];
 
   constructor() {}
@@ -137,6 +138,20 @@ class App {
 }
 
 App.init();
+
+const text = document.querySelectorAll('#text');
+
+text.forEach(text => {
+  text.addEventListener('mouseover', ()=>{
+    text.classList.add('color_new');
+  })
+}); 
+
+text.forEach(text => {
+  text.addEventListener('mouseout', ()=>{
+    text.classList.remove('color_new');
+  })
+}); 
 
 
 
