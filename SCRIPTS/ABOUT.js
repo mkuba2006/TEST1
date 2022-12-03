@@ -155,25 +155,40 @@ text.forEach(text => {
 
 
 
-const items = document.querySelectorAll('.product-item');
+let items = document.querySelectorAll('.product-item');
 
-let i = 0;
-while( i <= items.length ){
+for(let i = 0; i <= items.length; i++){
 
-  if(i%2 == 0 && window.screen.width > 1500){
+  if(window.screen.width > 930){
+
+    if(i%2 == 0){
     console.log(i + ' tak');
     items[i].style.float = 'left';
     items[i].style.marginRight = '20px';
-  } else{
+    } 
+    
+    else {
     console.log(i + ' nie');
     items[i+2].style.marginTop = '65px';
+    }
+
+  } 
+  
+  else{
+    items[i].style.clear = 'both';
+    items[i].style.width = '220%';
+    items[i].classList.add('testa');
+
   }
 
-  i++;
+
+
+
+
 }
 
-items[5].style.clear = 'both';
-items[5].classList.add('lasty');
+
+
 
 
 

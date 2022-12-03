@@ -13,6 +13,7 @@ body{
     justify-content: center;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 
@@ -22,8 +23,7 @@ html{
     background: #1A1A1D ;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    
+
 }
 
 header{
@@ -187,6 +187,10 @@ header{
 
 
 
+
+      .testa{
+        background-color: #190a35;
+      }
 
 
 
@@ -358,6 +362,15 @@ nav a{
         padding-top: 2.1rem;
     }
 }
+
+@media screen and (max-width:1320px) {
+    .product-item__content button {
+        font-size: 20px;
+    }
+    .product-item__content{
+        font-size: 15px;
+    }
+}
 @media screen and (max-width:1150px) {
    
     #header_logo{
@@ -463,5 +476,14 @@ nav a{
     #main-contcts{
         margin: 0;
     }
-    
+    .testa{
+        background-color: #190a35;
+        max-height: 170px;
+        min-height: 100px;
+        min-width: 90vw;
+    }
+    #opisa{
+        margin-top: 50px;
+        font-size: 30px;
+    }
 }

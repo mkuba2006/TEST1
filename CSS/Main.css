@@ -110,25 +110,6 @@ transition: all 0.3s ease;
     
 }
 
-
-footer{
-width: 100%;
-border-top: #DEB992 1px solid ;
-position: absolute;
-bottom: 0%;
-display: flex;
-padding-left: 3%;
-padding-right: 3%;
-padding-top: 1%;
-padding-bottom: 0.5%;
-justify-content: space-between;
-align-items: center;
-background-color: #180814ea;
-}
-
-
-
-
 #photo:hover{
 background: #5c5b5b28 ;
 }
@@ -202,7 +183,20 @@ opacity: 0;
 }
 
 
-
+footer{
+    width: 100%;
+    border-top: #DEB992 1px solid ;
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 0.5%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #180814ea;
+    }
 
 .fa-active{
     background-color: #37373d3a;
@@ -385,7 +379,11 @@ nav a{
         width: 60vw;
         }
 
-
+        #main-contats{
+            width: 100vw;
+            justify-content: space-between;
+            background-color: #285AEB;
+        }
 
 
 }
@@ -463,6 +461,7 @@ nav a{
     #fa{
         font-size: 33px;
         padding: 10px;
+        
     }
 
     .icon{
@@ -476,9 +475,10 @@ nav a{
 @media screen and (max-width: 600px) {
     footer{
         flex-direction: column-reverse ;
-        height: 10vh;
+        height: 14vh;
         align-items: center;
         justify-content: center;
+        justify-content: space-around;
     }
 
     #cp-right{
@@ -493,9 +493,7 @@ nav a{
         width: 37px;
         height: 37px;
     }
-    #main-contats{
-        clear: both;
-    }
+
 
     #content{
         font-size: 15px;
@@ -560,8 +558,8 @@ nav a{
         font-size: 25px;
     }
 
-    #main-contcts{
-        margin: 0;
+
+    footer{
+        padding-top: 3%;
     }
-    
 }
