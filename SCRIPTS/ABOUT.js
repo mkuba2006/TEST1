@@ -156,7 +156,6 @@ text.forEach(text => {
 
 
 let items = document.querySelectorAll('.product-item');
-
 for(let i = 0; i <= items.length; i++){
 
   if(window.screen.width > 930){
@@ -178,7 +177,6 @@ for(let i = 0; i <= items.length; i++){
     items[i].style.clear = 'both';
     items[i].style.width = '220%';
     items[i].classList.add('testa');
-
   }
 
 
