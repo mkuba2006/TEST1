@@ -20,6 +20,14 @@ $('nav a').on('click', function(e){
 
 
 
+
+
+
+
+
+  
+
+
 class Product {
   constructor(nazwa, link, obraz, text, opis){
     this.nazwa = nazwa;
@@ -119,7 +127,7 @@ class ProductList {
 
 
 
-class Shop {
+class end {
   render() {
     const renderHook = document.getElementById('app');
     const productList = new ProductList();
@@ -131,13 +139,15 @@ class Shop {
 class App {
   static cart;
   static init() {
-    const shop = new Shop();
+    const shop = new end();
     shop.render();
     this.cart = shop.cart;
   }
 }
 
 App.init();
+
+
 
 const text = document.querySelectorAll('#text');
 
