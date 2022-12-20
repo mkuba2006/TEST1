@@ -78,20 +78,20 @@ header{
 nav{
 justify-content: space-between;
 height: fit-content;
-}
-
-nav a{
-    display: inline;
-    list-style-type: none;
-    text-decoration: none;
-    padding-right: 1.8rem;
-    padding-left: 1.8rem;
-    padding-bottom: 1.5rem;
-    padding-top: 2.1rem;
-    overflow: hidden;
-    transition: 0.5s;
-    width: 100%;
-    color: #E9C893;
+ 
+    a{
+        display: inline;
+        list-style-type: none;
+        text-decoration: none;
+        padding-right: 1.8rem;
+        padding-left: 1.8rem;
+        padding-bottom: 1.5rem;
+        padding-top: 2.1rem;
+        overflow: hidden;
+        transition: 0.5s;
+        width: 100%;
+        color: #E9C893;
+    }
 }
 
 #burger div{
@@ -135,36 +135,44 @@ width: 30vw;
 top: 2vw;
 color: #E9C893;
 user-select: none;
+
+    h1{
+        cursor: pointer;
+    }
+
+    h2{
+        justify-content: center;
+        align-items: center;
+        padding: 10%;
+    }
+
+    span{
+        color: #7400d2;
+        text-decoration: underline solid 2px ;
+    }
+
+
+
 }
 
 .animation{
     display: flex;
 }
 
-h1{
-    cursor: pointer;
-}
-
-h2{
-    justify-content: center;
-    align-items: center;
-    padding: 10%;
-}
-
-span{
-    color: #7400d2;
-    text-decoration: underline solid 2px ;
-}
 
 
-.toggle .line_one{
-transform: rotate(-45deg) translate(-9px , 4px);
-}
-.toggle .line_dwo{
-opacity: 0;
-}
-.toggle .line_three{
+
+.toggle{ 
+    .line_one{
+    transform: rotate(-45deg) translate(-9px , 4px);
+    }
+    .line_dwo{
+    opacity: 0;
+    }
+    .line_three{
     transform: rotate(45deg) translate(-9px , -4px);
+    }
+
 }
 
 .nav_active{
