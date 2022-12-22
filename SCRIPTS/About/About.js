@@ -1,5 +1,5 @@
 
-import { ProductList } from './About/ProductList.js';
+import { ProductList } from './ProductList.js';
 
 globalThis.DEFAULT_VALUE = 'MAX';
 

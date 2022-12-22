@@ -1,13 +1,12 @@
 $('nav a').on('click', function(e){
-
   e.preventDefault();
-  
   var url = this.href;
-  
   $('nav a.active').toggleClass( "active" )
   $(this).toggleClass( "active" )
   setTimeout(`location.href = '${url}';`,500);
   })
+
+
 $('#fa:last-child').hover(function () {
   $(this).toggleClass( "fa-active" );
   }
