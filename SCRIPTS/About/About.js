@@ -6,8 +6,8 @@ const time = 500
 $('nav a').on('click', function (e) {
   e.preventDefault()
   const url = this.href
-  $('nav a.active').toggleClass('active')
-  $(this).toggleClass('active')
+  $('nav a.active').toggleClass('activel')
+  $(this).toggleClass('activel')
   setTimeout(`location.href = '${url}';`, time)
 })
 
@@ -77,3 +77,6 @@ for (let i = 0; i <= items.length; i++) {
     items[i].classList.add('testa')
   }
 }
+
+
+

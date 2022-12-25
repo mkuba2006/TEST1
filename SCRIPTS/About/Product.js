@@ -7,3 +7,8 @@ export class Product {
     this.opis = opis
   }
 }
+
+
+new fullpage('#fullPage', {
+  autoScrolling: true
+})

@@ -26,6 +26,7 @@ html{
 
 }
 
+
 header{
     padding-left: 2%;
     padding-right: 2%;
@@ -258,7 +259,7 @@ background: #5c5b5b28 ;
 
 
 
-.active{
+.activel{
     background-color: #DEB992;
     font-weight: 800;
     color: #141824;
