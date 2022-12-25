@@ -47,6 +47,11 @@ class App {
 App.init()
 
 const text = document.querySelectorAll('#text')
+const list = document.querySelector('.product-list');
+console.log(list);
+const list_last = list.lastElementChild;
+list_last.style.marginTop = "20px";
+
 
 text.forEach(text => {
   text.addEventListener('mouseover', () => {
@@ -66,12 +71,13 @@ for (let i = 0; i <= items.length; i++) {
     if (i % 2 == 0) {
       console.log(i + ' tak')
       items[i].style.float = 'left'
-      items[i].style.marginRight = '20px'
+      items[i].style.marginRight = '15px'
     } else {
       console.log(i + ' nie')
-      items[i + 2].style.marginTop = '65px'
+      items[i + 2].style.marginTop = '20px'
     }
-  } else {
+  } 
+  else {
     items[i].style.clear = 'both'
     items[i].style.width = '220%'
     items[i].classList.add('testa')
