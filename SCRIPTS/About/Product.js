@@ -9,20 +9,28 @@ export class Product {
   
 }
 
-
-console.log(window.innerWidth);
-
+const header = document.querySelectorAll('header');
 
 
-if(window.innerWidth > 700){
 
-  new fullpage('#fullPage', {
-    autoScrolling: true,
-    navigation: true,
-    navigationTooltips:['Fav songs', 'nothing'],
-    showActiveTooltip: true,
-    scrollingSpeed: 1000
+header.forEach(text => {
+  text.addEventListener('scroll', () => {
+    text.style.top= '100vh';
   })
+})
 
 
-}
+
+
+// if(window.innerWidth > 700){
+
+//   new fullpage('#fullPage', {
+//     autoScrolling: true,
+//     navigation: true,
+//     navigationTooltips:['Fav songs', 'nothing'],
+//     showActiveTooltip: true,
+//     scrollingSpeed: 1000,
+//   })
+
+
+// }

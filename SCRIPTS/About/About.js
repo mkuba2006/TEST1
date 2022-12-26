@@ -48,7 +48,6 @@ App.init()
 
 const text = document.querySelectorAll('#text')
 const list = document.querySelector('.product-list');
-console.log(list);
 const list_last = list.lastElementChild;
 list_last.style.marginTop = "20px";
 
@@ -74,15 +73,13 @@ for (let i = 0; i <= items.length; i++) {
       items[i].style.marginRight = '15px'
     } else {
       console.log(i + ' nie')
-      items[i + 2].style.marginTop = '20px'
+      items[i+2].style.marginTop = '20px'
     }
   } 
   else {
-    items[i].style.clear = 'both'
-    items[i].style.width = '220%'
+    items[i].style.clear = 'both';
+    items[i].style.width = '220%';
     items[i].classList.add('testa')
   }
 }
-
-
 

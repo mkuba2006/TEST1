@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 /* eslint-disable no-useless-constructor */
-import { ProductItem } from './ProductItem.js'
+import { ProductItem} from './ProductItem.js'
 import { Product } from './Product.js'
 
 export class ProductList {
@@ -60,6 +60,24 @@ export class ProductList {
       const prodEl = productItem.render()
       prodList.append(prodEl)
     }
+
+      const childrens = prodList.children;
+      
+
+      if(window.innerWidth < 500){
+          for(const e of childrens){  
+
+            e.style.width= '100vw';
+            e.style.display= 'block';
+            e.style.minHeight= '20vh';
+            e.style.maxHeight= '40vh';
+            e.style.height= 'auto';
+          }
+      }
+    
+
+
+
     return prodList
   }
 }
