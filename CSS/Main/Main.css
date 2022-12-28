@@ -240,9 +240,9 @@ footer {
   background-color: rgba(24, 8, 20, 0.9176470588);
 }
 
-.fa-active {
-  background-color: rgba(55, 55, 61, 0.2274509804);
-  border-radius: 5px;
+#cp-right {
+  font-size: 17px;
+  color: #E9C893;
 }
 
 #all:first-child {
@@ -253,49 +253,25 @@ footer {
   margin-left: 10px;
 }
 
-.icons {
-  display: flex;
-  -moz-column-gap: 25px;
-       column-gap: 25px;
+
+
+.social-icon {
+    color: #fff;
 }
 
-.icon {
-  width: 50px;
-  height: 50px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 26px;
-  color: rgb(255, 255, 255);
-  border-radius: 20%;
-  outline: 2px solid rgba(255, 255, 255, 0.178);
-  transition-property: outline-offset, outline-color, background-color;
-  transition-duration: 0.25s;
-}
 
-.icon:hover {
-  outline-offset: 4px;
-}
 
-.icon:hover i {
-  -webkit-animation: shake 0.25s;
-          animation: shake 0.25s;
+.fa {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: rgba(24, 8, 20, 0);
 }
-
-.icon--instagram:hover {
-  background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  outline-color: #a02d76;
-}
-
-.icon--github:hover {
-  background-color: #3F0071;
-  outline-color: #3F0071;
-}
-
-.icon--discord:hover {
-  background-color: #7289DA;
-  outline-color: #7289DA;
+.fa:hover {
+    background-color: rgba(66, 61, 65, 0.986);
 }
 
 @media screen and (min-height: 600px) and (min-width: 800px) {
@@ -320,14 +296,7 @@ footer {
   h1 {
     font-size: 40px;
   }
-  #cp-right {
-    font-size: 21px;
-    color: #E9C893;
-  }
-  #fa {
-    font-size: 42px;
-    padding: 10px;
-  }
+
   footer {
     padding: 2% 2% 1.5% 2%;
     height: 8vh;
@@ -353,6 +322,9 @@ footer {
   }
   nav {
     margin-left: 0;
+  }
+  #cp-right {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 1350px) {
@@ -406,18 +378,13 @@ footer {
     top: 10vh;
     height: 63vh;
     width: 60vw;
-    font-size: 20px;
     min-width: 80%;
   }
-  h1 {
-    font-size: 35px;
-  }
+
   #header_logo {
     font-size: 3em;
   }
-  #cp-right {
-    font-size: 23px;
-  }
+
   #fa {
     font-size: 35px;
     padding: 10px;
@@ -455,9 +422,7 @@ footer {
   }
 }
 @media screen and (max-width: 700px) {
-  #cp-right {
-    font-size: 23px;
-  }
+
   #fa {
     font-size: 33px;
     padding: 10px;
@@ -474,9 +439,6 @@ footer {
     align-items: center;
     justify-content: center;
     justify-content: space-around;
-  }
-  #cp-right {
-    font-size: 20px;
   }
   #fa {
     padding: 7px;
@@ -498,7 +460,10 @@ footer {
     font-size: 15px;
   }
   h1 {
-    font-size: 20px;
+    font-size: 23px;
+  }
+  h2{
+    font-size:20px;
   }
   #header_logo {
     font-size: 1.7em;
@@ -512,9 +477,6 @@ footer {
     padding-left: 1%;
     padding-right: 1%;
     padding-top: 1%;
-  }
-  #cp-right {
-    font-size: 18px;
   }
   #fa {
     font-size: 25px;

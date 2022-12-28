@@ -21,7 +21,7 @@ $('#fa:last-child').hover(function () {
   var rok = dzis.getFullYear();
   var est = new Date('Sep 10, 2021 15:00:00');
   var roznica = dzis.getTime() - est.getTime();
-  roznica = (roznica / 31556900000);
+  roznica = Math.ceil(roznica / 31556900000);
   
   var msg = document.getElementById('clock');
   if(Math.floor(roznica)>1){

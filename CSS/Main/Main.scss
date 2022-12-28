@@ -227,40 +227,6 @@ footer{
     column-gap: 25px;
 }
 
-.icon{
-    width: 50px;
-    height: 50px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    font-size: 26px;
-    color: rgb(255, 255, 255);
-    border-radius: 20%;
-    outline: 2px solid rgba(255, 255, 255, 0.178);
-    transition-property: outline-offset, outline-color, background-color;
-    transition-duration: .25s;
-}
-.icon:hover{
-    outline-offset: 4px;
-}
-.icon:hover i{
-    animation: shake .25s;
-}
-.icon--instagram:hover{
-    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) ;
-    outline-color: #a02d76 ;
-}
-
-.icon--github:hover{
-    background-color: #3F0071;
-    outline-color: #3F0071;
-}
-
-.icon--discord:hover{
-    background-color: #7289DA;
-    outline-color: #7289DA;
-}
 
 
 

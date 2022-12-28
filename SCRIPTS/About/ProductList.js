@@ -38,11 +38,11 @@ export class ProductList {
       '4'
     ),
     new Product(
-      'Under My Thumb',
-      'https://www.youtube.com/watch?v=UHcR648Cg3I',
-      'https://m.media-amazon.com/images/I/41+iACy1IhL._SY580_.jpg',
-      'by The Rolling Stones',
-      'https://pl.wikipedia.org/wiki/The_Rolling_Stones',
+      'When I come around',
+      'https://www.youtube.com/watch?v=i8dh9gDzmz8',
+      'https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d',
+      'by Green Day',
+      'https://pl.wikipedia.org/wiki/Green_Day',
       5
     ),
     new Product(
