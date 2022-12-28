@@ -1,10 +1,11 @@
 export class Product {
-  constructor (nazwa, link, obraz, text, opis) {
+  constructor (nazwa, link, obraz, text, opis, cyf) {
     this.nazwa = nazwa
     this.link = link
     this.obraz = obraz
     this.text = text
     this.opis = opis
+    this.cyf = cyf
   }
   
 }
