@@ -152,15 +152,7 @@ opacity: 0;
 
 
 
-.Ram-button{
-    display: flex;
-    width: 180px;
-    height: 30px;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 1vh;
 
-}
 .Ram-button a{
     color: #DEB992 ;
     padding-left: 35px;

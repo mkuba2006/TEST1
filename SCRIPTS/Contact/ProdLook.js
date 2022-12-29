@@ -20,6 +20,12 @@ export class ProdLook{
     button.style.cssText =`
       border-radius: 5px;
       color: white;
+      display: flex;
+      width: 180px;
+      height: 30px;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 1vh;
     `
 
 
