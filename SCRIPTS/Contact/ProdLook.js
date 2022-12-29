@@ -4,12 +4,30 @@ export class ProdLook{
     }
   
     render(){
-      const Ram = document.createElement('li');
+      const Ram = document.createElement('tr');
       Ram.className = 'Ram-li';
-      Ram.innerHTML= `
-        <a href="${this.prod.link}"><i class="${this.prod.img}"></i></a>
-        <button class="Ram-button">${this.prod.text}</button>
-      `;
+      const button = document.createElement('div');
+      button.className = 'Ram-button';
+      button.innerHTML= `
+        <a href="${this.prod.link}">
+          <i class="${this.prod.img}">
+            ${this.prod.text}
+          </i>
+        </a>
+    `;
+
+
+    button.style.cssText =`
+      border-radius: 5px;
+      color: white;
+    `
+
+
+
+      Ram.append(button);
       return Ram
+
+
     }
+
   }

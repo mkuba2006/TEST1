@@ -5,53 +5,53 @@ export class ProdList{
     products =[
       new Prod(
       'https://discord.com/channels/@me',
-      'ri-discord-fill',
-      'Tap to Discord',
+      'fa-brands fa-discord',
+      'Discord',
       ),
       new Prod(
       'https://www.instagram.com/jakub_myrta/',
-      'ri-instagram-fill',
-      'Tap to instagram',
+      'fa-brands fa-instagram',
+      'instagram',
       ),
       new Prod(
       'https://www.facebook.com/profile.php?id=100042699441638',
-      'ri-facebook-circle-fill',
-      'Tap to Facebook',
+      'fa-brands fa-facebook',
+      'Facebook',
       ),
       new Prod(
       'https://twitter.com/JamesM60086044',
-      'ri-twitter-fill',
-      'Tap to twitter',
+      'fa-brands fa-twitter',
+      'twitter',
       ),  
       new Prod(
       'https://github.com/mkuba2006',
-      'ri-github-fill',
-      'Tap to GitHub',
+      'fa-brands fa-github',
+      'GitHub',
       ),
       new Prod(
       'https://www.youtube.com/channel/UCyOQ92MN93d2f4ubJy9SMug',
-      'ri-youtube-fill',
-      'Tap to YouTube',
+      'fa-brands fa-youtube',
+      'YouTube',
       ),
     
       new Prod(
       'https://open.spotify.com/user/dkjcdvsyjz6ciuzj2xfl5tp6c',
-      'ri-spotify-fill',
-      'Tap to Spotify',
+      'fa-brands fa-spotify',
+      'Spotify',
       ),
       new Prod(
         'https://steamcommunity.com/profiles/76561198866310633/',
-        'ri-steam-fill',
-        'Tap to Steam',
+        'fa-brands fa-steam',
+        'Steam',
         ),
     ];
     
     render(){
-        const List_prod = document.createElement('ul');
-        List_prod.className = 'List_prod_ul';
+        const List_prod = document.createElement('div');
+        List_prod.className = 'List_prod_table';
         const opis = document.createElement('div');
         opis.setAttribute('id', 'opis');
-        const opis_opis = document.createTextNode("My favourite songs");
+        const opis_opis = document.createTextNode("Contact me");
         opis.setAttribute('id', 'opisa');
         opis.append(opis_opis);
         List_prod.prepend(opis);
@@ -61,6 +61,8 @@ export class ProdList{
           const prodEl = productItem.render();
           List_prod.append(prodEl);
         }
+        console.log(`${window.screen.width} x ${window.screen.height}`);
         return List_prod;
+        
       }
     }

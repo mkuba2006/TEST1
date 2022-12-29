@@ -86,7 +86,7 @@ export class ProductList {
             e.style.height= 'auto';
           }
           opis.style.minHeight = "auto";
-          opis.style.marginTop = "6vh";
+          
       }
 
     return prodList
