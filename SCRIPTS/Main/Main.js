@@ -10,12 +10,9 @@ $('nav a').on('click', function(e){
 $('#fa:last-child').hover(function () {
   $(this).toggleClass( "fa-active" );
   }
-);
+), true;
 
-$('#fa:last-child').hover(function () {
-  $(this).toggleClass( "fa-active" );
-  }
-);
+
 
   const dzis = new Date();
   var rok = dzis.getFullYear();
