@@ -10,25 +10,27 @@ export class ProdLook{
       button.className = 'Ram-button';
       button.innerHTML= `
         <a href="${this.prod.link}">
-          <i class="${this.prod.img}">
+          <i class="${this.prod.img}"></i>
             ${this.prod.text}
-          </i>
         </a>
     `;
-
 
     button.style.cssText =`
       border-radius: 5px;
       color: white;
-      display: flex;
-      width: 180px;
-      height: 30px;
-      justify-content: flex-start;
+      
+      height: 35px;
+      display:flex;
+      justify-content: center;
       align-items: center;
       margin-top: 1vh;
+      padding: 5px;
     `
 
 
+    
+    
+    
 
       Ram.append(button);
       return Ram

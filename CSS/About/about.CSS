@@ -20,6 +20,7 @@ html{
     overflow-x: hidden;
 }
 header{
+    background-color: rgba(24, 8, 20, 0.9176470588);
     padding-left: 2%;
     padding-right: 2%;
     width: 100vw;

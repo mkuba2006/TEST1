@@ -49,18 +49,26 @@ export class ProdList{
     render(){
         const List_prod = document.createElement('div');
         List_prod.className = 'List_prod_table';
-        const opis = document.createElement('div');
+        const opis = document.createElement('h1');
         opis.setAttribute('id', 'opis');
         const opis_opis = document.createTextNode("Contact me");
         opis.setAttribute('id', 'opisa');
         opis.append(opis_opis);
         List_prod.prepend(opis);
     
+        opis.style.cssText =`
+          margin-top: 2vh;
+          font-size: 30px ;
+        `
+
         for(const prod of this.products){
           const productItem = new ProdLook(prod);
           const prodEl = productItem.render();
           List_prod.append(prodEl);
         }
+
+
+
         console.log(`${window.screen.width} x ${window.screen.height}`);
         return List_prod;
         

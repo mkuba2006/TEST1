@@ -28,6 +28,7 @@ html{
 }
 
 header{
+    background-color: rgba(24, 8, 20, 0.9176470588);
     padding-left: 2%;
     padding-right: 2%;
     width: 100%;
@@ -154,17 +155,39 @@ opacity: 0;
 
 
 .Ram-button a{
-    color: #DEB992 ;
-    padding-left: 35px;
+    color: #9b8d8d ;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.Ram-button i{
+
+    justify-items: flex-start;
 }
 
 #opis{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
+.color_new {
+    background-color: rgba(0, 0, 0, 0.4431372549);
+  }
 
+.color_new2{
+    background-color: #555b6bb9;
+    color: #a6ff00;
+    margin-top: 100px;
+    animation-timeline: 6s;
+}
+
+.active{
+    background-color: #DEB992;
+    font-weight: 800;
+    color: #141824;
+}
 
 
 

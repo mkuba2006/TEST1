@@ -25,18 +25,6 @@ class Sum{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
   
 $('nav a').on('click', function(e){
 
@@ -85,4 +73,21 @@ text.forEach(text => {
   text.addEventListener('mouseout', ()=>{
     text.classList.remove('color_new');
   })
+}); 
+
+
+
+const buttons = document.querySelectorAll('.Ram-button');
+console.log(buttons);
+
+buttons.forEach(text => {
+  text.addEventListener('mouseover', ()=>{
+    text.classList.add('color_new2');
+})
+}); 
+
+buttons.forEach(text => {
+  text.addEventListener('mouseout', ()=>{
+  text.classList.remove('color_new2');
+})
 }); 
